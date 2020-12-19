@@ -1,0 +1,22 @@
+#
+# Utility Truck Interaction - FiveM Port 1.0 Beta
+# 
+# Copyright (c) 2020 PNWParksFan & Christopher M, Inferno Collection. All rights reserved.
+#
+
+language: csharp
+solution: Utility-Truck-Interaction.sln
+mono: latest
+dotnet: 3.1
+install:
+  - nuget restore Utility-Truck-Interaction.sln
+script:
+  - msbuild Utility-Truck-Interaction.sln /p:Configuration=Release /p:TargetFrameworkVersion="v4.5.2" /p:Verbosity=detailed
+after_success:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh success $WEBHOOK_URL
+after_failure:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh failure $WEBHOOK_URL

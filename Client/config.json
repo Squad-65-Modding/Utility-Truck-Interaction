@@ -1,0 +1,15 @@
+{
+	"OffsetX": 0,
+	"OffsetY": -0.35,
+	"OffsetZ": 0.2,
+
+	"RaiseSpeed": 0.3,
+	"LowerSpeed": 0.25,
+	"RotateSpeed": 0.15,
+
+	"EnableCollisionProps": true,
+
+	"EnableEngine": true,
+	"LimitSpeed": 5,
+	"AutoAttachOnMove": true
+}
