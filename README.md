@@ -23,4 +23,4 @@ Usage:
 - Climb into the bucket, then use NUMPAD 4/6 to rotate, NUMPAD 7/9 to change height
 - When finished, type `/uti lock`
 ***
-> The Inferno Collection Team
+> The Inferno Collection Team / Wolf Designs
